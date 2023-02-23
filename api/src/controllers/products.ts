@@ -1,5 +1,4 @@
-// create product controllers here
-// create product controllers here
+
 import { Request, Response } from "express";
 
 const productList = [

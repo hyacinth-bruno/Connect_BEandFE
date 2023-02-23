@@ -1,26 +1,5 @@
 import { Request, Response } from "express";
 
-// const userList = [
-//     {
-//         id: 1,
-//         userName: 'user 1',
-//         price: 10.99,
-//         image: 'https://media1.popsugar-assets.com/files/thumbor/NIuD31FHtikei2mpyw6-NRqyMpA/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/05/18/868/n/1922564/7cdf4103a5c5a5f7_netimg0nTrWd/i/best-summer-dresses.png'
-//       },
-//       {
-//         id: 2,
-//         userName: 'user 2',
-//         price: 19.99,
-//         image: 'https://media1.popsugar-assets.com/files/thumbor/beICYRiNvICAMgWiO7IkZSJcDVM/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/07/02/899/n/1922564/83e6b0335d1bc000c8a204.70555331_/i/Best-Beach-Holiday-Clothes-Women.jpg'
-//       },
-//       {
-//         id: 3,
-//         userName: 'user 3',
-//         price: 5.99,
-//         image: 'https://www.instyle.com/thmb/CMCxHpdZd5h1ni8VX8gc1Gjr_QQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1223362691-2000-baff2b0cae07445d9f381cee7cc72faf.jpg'
-//       }
-// ];
-
 
 const userList = [
     {

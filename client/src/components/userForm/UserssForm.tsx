@@ -15,9 +15,7 @@ type User = {
 };
 
 const validationSchema = yup.object({
-  // name: yup.string().required("Name is required"),
   email: yup.string().email("Invalid email").required("Email is required"),
-  // age: yup.number().required("Age is required"),
   password: yup
     .string()
     .required("Password is required")
@@ -54,20 +52,7 @@ export default function UsersForm() {
     >
       {({ handleChange, errors, touched }) => (
         <Form>
-          {/* <div>
-            User log in with email and password < br />< br />< hr />
-            <Field
-              as={TextField}
-              id="name"
-              name="name"
-              label="Name"
-              variant="outlined"
-              required
-              onChange={handleChange}
-              helperText={touched.name && errors.name}
-              error={touched.name && Boolean(errors.name)}
-            />
-          </div> */}
+         
           <div>
             <Field
               as={TextField}
@@ -81,20 +66,7 @@ export default function UsersForm() {
               error={touched.email && Boolean(errors.email)}
             />
           </div>
-          {/* <div>
-            <Field
-              as={TextField}
-              id="age"
-              name="age"
-              label="Age"
-              variant="outlined"
-              type="number"
-              required
-              onChange={handleChange}
-              helperText={touched.age && errors.age}
-              error={touched.age && Boolean(errors.age)}
-            />
-          </div> */}
+        
           <div>
 
             <div>

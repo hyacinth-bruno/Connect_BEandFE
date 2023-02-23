@@ -1,5 +1,4 @@
-// create product routes here
-// create product routes here
+
 import { Router } from "express";
 import { getProducts } from "../controllers/products";
 

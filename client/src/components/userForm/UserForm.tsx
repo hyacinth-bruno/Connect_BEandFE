@@ -33,10 +33,7 @@ setUserInput({...userInput, age: Number(event.target.value)});
 }
 
 console.log(userInput, "userInput");
-//send data to server
-//method: post
-//endpoint: http://localhost:8000/users
-//data: userInput
+
 
 const url = "http://localhost:8000/users";
 function onSubmitHandler () {
