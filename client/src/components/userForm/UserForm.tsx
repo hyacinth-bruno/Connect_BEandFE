@@ -33,7 +33,10 @@ setUserInput({...userInput, age: Number(event.target.value)});
 }
 
 console.log(userInput, "userInput");
-
+//send data to server
+//method: post
+//endpoint: http://localhost:8000/users
+//data: userInput
 
 const url = "http://localhost:8000/users";
 function onSubmitHandler () {
@@ -51,7 +54,7 @@ function onSubmitHandler () {
     <TextField id = "outlined-basic" label = "Email" variant = "outlined" onChange={getUserEmail}/>
     <TextField id = "outlined-basic" label = "Age" variant = "outlined" onChange={getUserAge}/>
 
-    {/* <button onClick={onSubmitHandler}></button> */}
+   
     
     <Button variant="contained" onClick={onSubmitHandler}>Submit</Button>
     </div>

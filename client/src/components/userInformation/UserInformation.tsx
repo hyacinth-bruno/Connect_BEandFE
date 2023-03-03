@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -12,6 +13,7 @@ export default function UserInformation() {
     email: "",
     firstName: "",
     image: "",
+    
   });
 
   const url = "http://localhost:8000/users/1";
@@ -31,10 +33,10 @@ export default function UserInformation() {
 
   return (
     <div>
-      <h1>UserInformation</h1>
+      <h1>User Information</h1>
       <p>Email: {user.email}</p>
       <p>First Name: {user.firstName}</p>
-      <p>Image: <img src = {user.image} alt = {user.email}/></p>
+      {/* <p>Image: <img src = {user.image} alt = {user.email}/></p> */}
     </div>
   );
 }

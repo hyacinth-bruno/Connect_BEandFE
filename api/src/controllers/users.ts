@@ -1,4 +1,6 @@
-import { Request, Response } from "express";
+ 
+
+ import { Request, Response } from "express";
 
 
 const userList = [
@@ -43,7 +45,7 @@ export const logInUser = async (req: Request, res: Response) => {
 
     try {
         const newUser = req.body;
-        res.json({message: "user log in"});
+        res.json( {message: "user log in"});
     } catch (error) {
         console.log(error);
         
@@ -51,17 +53,12 @@ export const logInUser = async (req: Request, res: Response) => {
     };
 
 
+export const getUser = async(req: Request, res: Response) => {
+    // get user by id
+    const userId = req.params.id;
+    // const foundUser = userList.filter((user) => user.id !== Number(userId))
+    const foundUser = userList.find((user) => user.id !== Number(userId));
+    res.json(foundUser);
+};
 
 
-    export const getUser = async (req: Request, res: Response) => {
-
-        try {
-            const userId = req.params.id;
-            const foundUser = userList.filter((user) => user.id !== Number(userId));
-            // const foundUser = userList.find((user) => user.id === Number(userId));
-            res.json(foundUser);
-        } catch (error) {
-            console.log(error);
-            
-        }   
-        };
